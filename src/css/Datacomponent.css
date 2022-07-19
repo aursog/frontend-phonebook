@@ -1,0 +1,19 @@
+.phonebook_container {
+    border: 1px solid #ccc;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.phonebook_container h4 {
+    color: #ccc;
+}
+
+.actionColumn {
+    text-align: right;
+}
+
+.trashButton {
+    width: 70px;
+    height: 70px;
+}

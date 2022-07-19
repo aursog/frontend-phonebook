@@ -1,0 +1,16 @@
+.container {
+    padding-top: 30px;
+}
+
+.button-column {
+    text-align: right;
+}
+
+.input_search {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.input_search input {
+    height: 40px;
+}
