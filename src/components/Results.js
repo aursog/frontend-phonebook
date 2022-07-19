@@ -12,13 +12,14 @@ export default class Results extends React.Component {
         axios.get('http://localhost:8080/phonebook/list')
             .then(res => {
                 const phonebooks = res.data;
-                this.setState({ phonebooks })
+                this.setState({phonebooks})
             })
     }
 
     render() {
-        return(
-            this.state.phonebooks.map( phonebook => <PhonebootData name={phonebook.fullname} phone={phonebook.phonenumber} id={phonebook.id} />)
+        return (
+            this.state.phonebooks.map(phonebook => <PhonebootData key={phonebook.id} name={phonebook.fullname}
+                                                                  phone={phonebook.phonenumber} id={phonebook.id}/>)
         )
     }
 }
